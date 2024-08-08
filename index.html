@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="shortcut icon" href="./img/rcon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Recipes</title>
 </head>
 <body>
     <header>
-        <nav class="white">
-            <a href=""></a>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="container">
+                    <a href="./index.html" class="brand-logo"><img src="./img/logo.png" alt="" style="max-width: 150px;"></a>
+                    <a href="#sidenav" class="sidenav-trigger right">
+                        <i class="material-icons orange-text text-darken-4 right">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="" class="orange-text text-darken-4">Home</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Cakes</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Soups</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Chicken</a></li>
+                        <li><a href="" class="orange-text text-darken-4">Customers</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="slider">
+            <ul class="slides">
+                <li><img src="img/cake_fruit.jpg"></li>
+                <li><img src="./img/shrimp_soup.jpg" alt="" class="responsive-img"></li>
+                <li><img src="./img/chicken_3.jpg" alt="" class="responsive-img"></li>
+                <li><img src="./img/dessert_chocolate.jpg" alt="" class="responsive-img"></li>
+                <li><img src="./img/ginger_cake.webp" alt="" class="responsive-img"></li>
+            </ul>
+        </div>
+        <ul class="sidenav orange darken-4" id="sidenav">
+            <li><a href="" class="white-text">Home</a></li>
+            <li><a href="" class="white-text">Cakes</a></li>
+            <li><a href="" class="white-text">Soups</a></li>
+            <li><a href="" class="white-text">Chicken</a></li>
+            <li><a href="" class="white-text">Customers</a></li>
+        </ul>
     </header>
 
     <main>
@@ -20,5 +52,15 @@
     <footer></footer>
     <script src="./js/jquery.js"></script>
     <script src="./js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sidenav").sidenav();
+            $(".slider").slider({
+                height: 500,
+                interval: 10000,
+                duraltion:1000
+            });
+        })
+    </script>
 </body>
 </html>
