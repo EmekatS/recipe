@@ -10,6 +10,9 @@
         .bold-text{
             font-weight: bold;
         }
+        .para-size{
+            font-size: 1.3rem;
+        }
         .slider .indicators .indicator-item.active {
             background-color: #e65100;
         }
@@ -56,7 +59,63 @@
     </header>
 
     <main>
-
+        <div class="container">
+            <h3 class="orange-text text-darken-4">Hello there, foodies!</h3>
+            <p class="para-size flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore hic deleniti repellendus earum, laborum aut, nam quo animi dolorem fuga nihil obcaecati accusamus corrupti. Delectus, blanditiis eaque, sunt ut soluta accusamus fugit temporibus hic odit aliquam, debitis facere? Non accusantium omnis dolor atque, eos aut est, et provident autem error in suscipit culpa? Rem inventore ipsa officiis porro sequi at doloribus ducimus suscipit! Nesciunt itaque, unde provident nostrum at iure pariatur ab inventore quibusdam aliquam nulla eos optio vero?</p>
+        </div>
+        <br>
+        <div class="divider">
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons white-text">label</i>
+                                <span>Cakes</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="./img/sponge_cake.webp" alt="" class="responsive-img">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum culpa quod corrupti quia voluptas nemo error nesciunt.?</p>
+                                <a href="" class="btn orange white-text darken-4 z-depth-0">Order Cakes</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 l4">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons white-text">label</i>
+                                <span>Soups</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="./img/mexican_soup.webp" alt="" class="responsive-img">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum culpa quod corrupti quia voluptas nemo error nesciunt.?</p>
+                                <a href="" class="btn orange white-text darken-4 z-depth-0">Order Soups</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 l4">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons white-text">label</i>
+                                <span>Chicken</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <img src="./img/chicken_8.webp" alt="" class="responsive-img">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum culpa quod corrupti quia voluptas nemo error nesciunt.?</p>
+                                <a href="" class="btn orange white-text darken-4 z-depth-0">Order Chicken</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer></footer>
@@ -70,6 +129,7 @@
                 interval: 10000,
                 duraltion:1000
             });
+            $(".collapsible").collapsible();
         })
     </script>
 </body>
