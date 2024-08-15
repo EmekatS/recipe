@@ -34,10 +34,10 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="" class="orange-text text-darken-4 bold-text">Home</a></li>
-                        <li><a href="" class="orange-text text-darken-4 bold-text">Cakes</a></li>
-                        <li><a href="" class="orange-text text-darken-4 bold-text">Soups</a></li>
-                        <li><a href="" class="orange-text text-darken-4 bold-text">Chicken</a></li>
-                        <li><a href="" class="orange-text text-darken-4 bold-text">Customers</a></li>
+                        <li><a href="#cake" class="orange-text text-darken-4 bold-text scrollspy">Cakes</a></li>
+                        <li><a href="#soup" class="orange-text text-darken-4 bold-text scrollspy">Soups</a></li>
+                        <li><a href="#chicken" class="orange-text text-darken-4 bold-text scrollspy">Chicken</a></li>
+                        <li><a href="#Customer" class="orange-text text-darken-4 bold-text scrollspy">Customers</a></li>
                     </ul>
                 </div>
             </nav>
@@ -54,10 +54,10 @@
         </div>
         <ul class="sidenav orange darken-4" id="sidenav">
             <li><a href="" class="white-text bold-text">Home</a></li>
-            <li><a href="" class="white-text bold-text">Cakes</a></li>
-            <li><a href="" class="white-text bold-text">Soups</a></li>
-            <li><a href="" class="white-text bold-text">Chicken</a></li>
-            <li><a href="" class="white-text bold-text">Customers</a></li>
+            <li><a href="" class="white-text bold-text scrollspy">Cakes</a></li>
+            <li><a href="" class="white-text bold-text scrollspy">Soups</a></li>
+            <li><a href="" class="white-text bold-text scrollspy">Chicken</a></li>
+            <li><a href="" class="white-text bold-text scrollspy">Customers</a></li>
         </ul>
     </header>
 
@@ -119,8 +119,9 @@
             </div>
             <br>
         </div>
+        <div class="scrollspy" id="Customer"></div>
         <div class="container">
-            <h3 class="orange-text text-darken-4 center-align">What Our Customers Say...</h3>
+            <h3 class="orange-text text-darken-4 center-align" >What Our Customers Say...</h3>
             <div class="row">
                 <div class="col s12">
                     <ul class="collection z-depth-0">
@@ -170,6 +171,7 @@
                 </div>
             </div>
         </div>
+        <div class="scrollspy" id="cake"></div>
         <div class="parallax-container hide-on-med-and-down">
             <div class="parallax">
                 <img src="./img/cake.jpg" alt="" class="responsive-img">
@@ -317,6 +319,7 @@
                 </div>
             </div>
         </div>
+        <div class="scrollspy" id="soup"></div>
         <div class="parallax-container hide-on-med-and-down">
             <div class="parallax">
                 <img src="./img/soup.jpg" alt="" class="responsive-img">
@@ -464,6 +467,7 @@
                 </div>
             </div>
         </div>
+        <div class="scrollspy"  id="chicken"></div>
         <div class="parallax-container hide-on-med-and-down">
             <div class="parallax">
                 <img src="./img/chicken.jpg" alt="" class="responsive-img">
@@ -630,6 +634,7 @@
                 </div>
             </div>
         </div>
+        <div class="footer-copyright orange darken-4 white-text bold-text center-align">&copy2024 Uche Chigozie Brendan</div>
     </footer>
     <script src="./js/jquery.js"></script>
     <script src="./js/materialize.js"></script>
@@ -643,7 +648,7 @@
             });
             $(".collapsible").collapsible();
             $(".parallax").parallax();
-            $(".scrollspy").scrollspy();
+            $(".scrollspy").scrollSpy();
         })
     </script>
 </body>
